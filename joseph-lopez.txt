@@ -1,0 +1,130 @@
+https://codepen.io/joseph-lop/pen/QWNjajO?editors=1100    
+
+
+    1. What is Semantic HTML? 
+		Elements that give specific descriptions of whats being defined, example being
+	<header>, <footer>, <section>, etc.
+
+    2. What is HTML used for? 
+		HTML is used for front-end design to be displayed on web browsers.
+
+    3. What is an attribute and where do we put it? 
+		Attributes add more context to elements, we usually put them in start tags. Ex:href for hyperlinks
+	or src for images.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+		Used for the primary title on a page, there are six and it goes from h1 to h6, h1 being the biggest.
+	you should only be using an h1 tag once.
+
+    5. Name two tags that have required attributes
+		Two tags are <a> and <input>
+
+    6. What do we put in the head of our HTML document? 
+		We put <!DOCTYPE HTML>
+
+    7. What is an id? 
+		Is an attribute that gives a name/identification to an element that is exclusive to that element, can not 
+	be used on other elements.
+
+    8. What elements can I add an id to? 
+		You can use id on all/any element.
+
+    9. How many times can I use the same id on a page? 
+		You can only use it once because giving an element an id attribute makes that id exclusive to that element.
+
+    10. What is a class? 
+		class is used to give an element a name/identification but it can be used repeatedly(more than once) and
+	isn't unique to elemenets given the class attribute.
+
+    11. What elements can I add a class to?
+		You can add class to any/all elements.
+ 
+    12. How many times can I use the same class on a page? 
+		You can use it as many times as you'd like, as long is it doesn't conflict with anything your working on.
+
+    13. How do I get my link to open in a new tab?
+		First, you'll have to have an element refrencing a link, <a href="https://www.google.com/">. Within the same
+	<a> tag you need to add target="_blank". Before adding the </a> tag you put in plain text the site name, ex: google.com,
+	this just gives the link to visually say "Google.com" 
+
+    14. What is the alt attribute in the image tag used for? 
+		It's used to show give a text description in the off chance that that intend image fails to dsipaly on screen.
+
+    15. How do I reference an id?
+		When your in CSS all you'd need to do is type # followed by the give name/identification, remember it is case
+	sensitive.
+
+    16. What is the difference between a section and a div
+		Function alone they are the exact same thing.
+
+    17. What is CSS used for? 
+		Used to give visual flare/presentation, like frames, color, fonts, etc.
+
+    18. How to we select an element? Example - every h2 on the page
+		Selecting elements in CSS is just typing out the elements name, ex: h1 {}. In the event that the elements is given 
+	an id or class you should follow it with a "." and its given name, ex: h1.TITLE {}.
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+		Difference being id identifies one element while class identifies several. You can use id to make changes to only one
+	h2 element, whereas class will make changes to every given element with the tag, ex: div.Section1.
+
+    20. How do we select classes in CSS?
+		To select class you need to list the element name first, followed by "." and the class's name.
+
+    21. How do we select a p element with a single class of “human””?
+		Input the following, ' p.human { } '.
+
+    22. What is a parent child selector? When would this be useful? 
+		Used to select all direct child elements, ex: $("div > span"). This can be useful when you only want to make changes to
+<span> with in <div> without affecting everything else.
+
+    23. How do you select all links within a div with the class of sidebar?
+		You would have to inpuit ' a:link
+
+    24. What is a pseudo selector?
+    25. What do we use the change the spacing between lines?
+		You us use either <br> or <hr> or 'section { line-height: 1.5; } '.
+
+    26. What do we use to change the spacing between letters?
+		You use ' section { line-spacing: 4px; } '
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+		You use ' section { text-trasnform: "insert capitals/lowercase/capaitalize"; } '.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+		You add ' border: 1px; ' to the div.
+
+    29. How do I select everything on the page? 
+		You use the universal selector, which is "*".
+
+    30. How do I write a comment in CSS?
+		You have to use ' /* "insert comment" */ '.
+
+    31. How do I find out what file I am in, when I am using the command line? 
+		You'd have to type 'pwd' and it will give you the file path you're currently in.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+		Type 'ls' and it will give a list of files/folders in current.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+		Type out 'git rm "file name"', be careful because its not casesensitive and it won't give you a notification upon
+ completetion, it will just delete what ever you told it to delete.
+
+    34. Why should I use version control? 
+		Helps keeps track of the history of a file, such as changes/updates done.
+
+    35. How often should I commit to github?
+		You can commit everytime you add or change something.
+
+    36. What is the command we would use to push our repo up to github? 
+		git push -u origin "branch name".
+
+    37. Walk me through Lambda's git flow. 
+		Create your own version of the repo - Fork
+ 		Add your TL as a collaborator
+ 		Clone the repo
+ 		Create a branch git checkout -b 'firstName-lastName'
+ 		Run your usual git commands for adding/committing and pushing.
+ 		Use student fork as the base
+ 		Add your TL as a reviewer on the Pull-Request
+		Submit Pull-Request.
